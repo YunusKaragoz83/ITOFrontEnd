@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label, input,select {
+            margin-bottom: 10px;
+        }
+        input[type="file"] {
+            margin-bottom: 30px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkgreen;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            margin: 0 auto;
+            width: 500px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--    Urun Kodu
+            Urun adı
+            Ktegori ==> Tekstil, gıda, elektronik, kırtasiye
+            Birim ==> adet, kg, litre, koli, düzine, Metre
+            Adet
+            Fiyat
+            Ürün Fotografı
+            Acıklama
+            Kaydet
+     -->
+
+     <!-- <table>
+        <thead><h1>Ürün Giriş Formu</h1></thead>
+        <tbody>
+            <tr>
+                <td><label for="urunKodu">Ürün Kodu</label></td>
+            </tr>
+        </tbody>
+     </table> -->
+
+    <form action="12.UrunGirisFormu" method="post" enctype="multipart/form-data">
+        
+        <h1>Ürün Giriş Formu</h1>
+        
+        <label for="urunKodu">Ürün Kodu</label><br>
+        <input type="text" name="urunKodu" id="urunKodu" required>
+        <br>
+        
+        <label for="urunAdi">Ürün Adı</label><br>
+        <input type="text" name="urunAdi" id="urunAdi" required>
+        <br>
+
+        <label for="kategori">Kategori</label><br>
+        <select name="kategori" id="kategori">
+            <optgroup label="Tekstil" name="Tekstil">Tekstil
+                <option>Erkek Giyim</option>
+                <option>Bayan Giyim</option>
+                <option>iç Giyim</option>
+                <option>Çocuk Giyim</option>
+            </optgroup>
+            <optgroup label="Gıda" name="Gıda">Gıda
+                <option>Ekmek</option>
+                <option>Simit</option>
+                <option>Börek</option>
+            </optgroup>
+            <optgroup label="Elektronik">Elektronik
+                <option>Bilgisayar</option>
+                <option>Televizyon</option>
+                <option>Bulaşık makinesi</option>
+                <option>Çamaşır makinesi</option>
+            </optgroup>
+            <optgroup label="Kırtasiye">Kırtasiye
+                <option>Kitap</option>
+                <option>Kalem</option>
+                <option>Silgi</option>
+            </optgroup>
+        </select><br>
+
+        <label for="birim">Birim</label><br>
+        <select name="birim" id="birim">
+            <option value="adet">Adet</option>
+            <option value="kg">Kg</option>
+            <option value="litre">Litre</option>
+            <option value="koli">Koli</option>
+            <option value="düzine">Düzine</option>
+            <option value="metre">Metre</option>
+        </select><br>
+
+        <label for="adet">Adet</label><br>
+        <input type="number" name="adet" id="adet" min="0" required>
+        <br>
+        <label for="fiyat">Fiyat</label><br>
+        <input type="number" name="fiyat" id="fiyat" min="0" required>
+        <br>
+        <label for="urunFotografi">Ürün Fotoğrafı</label><br>
+        <input type="file" name="urunFotografi" id="urunFotografi" required>
+        <br>
+        <label for="aciklama">Açıklama</label><br>
+        <textarea name="aciklama" id="aciklama" cols="40" rows="5" placeholder="Ürün açıklamasını giriniz!"></textarea>
+        <br>
+
+        <label for="yaynında">Yayında</label>
+        <input type="radio" id="yayında" name="yayında">Evet
+        <input type="radio" id="yayında" name="yayında">Hayır<br>
+
+        <button type="submit" style="margin-top: 30px;">Kaydet</button>
+        
+</body>
+</html>
