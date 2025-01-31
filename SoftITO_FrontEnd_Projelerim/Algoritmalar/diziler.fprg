@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="diziler"/>
+        <attribute name="authors" value="yunus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-30 04:38:36 &#214;S"/>
+        <attribute name="created" value="eXVudXM7TVlUT1A7MjAyNS0wMS0zMDswMzo1Mzo1MSDDllM7MjQwMw=="/>
+        <attribute name="edited" value="eXVudXM7TVlUT1A7MjAyNS0wMS0zMDswNDozODozNiDDllM7MjsyNTE5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="notlar" type="Integer" array="True" size="40"/>
+            <declare name="index" type="Integer" array="False" size=""/>
+            <for variable="index" start="0" end="39" direction="inc" step="1">
+                <assign variable="notlar[index]" expression="Random(100)"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

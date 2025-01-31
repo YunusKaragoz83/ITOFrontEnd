@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Say&#305; tahmin oyunu"/>
+        <attribute name="authors" value="yunus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-31 10:26:10 &#214;&#214;"/>
+        <attribute name="created" value="eXVudXM7TVlUT1A7MjAyNS0wMS0zMTswOTozOTozNSDDlsOWOzI1NDc="/>
+        <attribute name="edited" value="eXVudXM7TVlUT1A7MjAyNS0wMS0zMTsxMDoyNjoxMCDDlsOWOzQ7MjYzOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="say&#305;, tahmin, tahminSay&#305;s&#305;" type="Integer" array="False" size=""/>
+            <assign variable="say&#305;" expression="Random(50)+1"/>
+            <assign variable="tahminSay&#305;s&#305;" expression="0"/>
+            <input variable="tahmin"/>
+            <while expression="tahmin!=say&#305; AND tahminSay&#305;s&#305;&lt;6">
+                <if expression="tahmin&lt;say&#305;">
+                    <then>
+                        <output expression="&quot;yukar&#305;&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;a&#351;a&#287;&#305;&quot;" newline="True"/>
+                    </else>
+                </if>
+                <assign variable="tahminSay&#305;s&#305;" expression="tahminSay&#305;s&#305;+1"/>
+                <input variable="tahmin"/>
+            </while>
+            <output expression="&quot;tebrikler, tahmin say&#305;s&#305;&quot; &amp;tahminSay&#305;s&#305;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

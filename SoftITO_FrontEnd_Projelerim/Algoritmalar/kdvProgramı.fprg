@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="kdvProgram&#305;"/>
+        <attribute name="authors" value="yunus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-30 02:37:00 &#214;S"/>
+        <attribute name="created" value="eXVudXM7TVlUT1A7MjAyNS0wMS0zMDswMTo1MToxOCDDllM7MjQwMg=="/>
+        <attribute name="edited" value="eXVudXM7TVlUT1A7MjAyNS0wMS0zMDswMjozNzowMCDDllM7MTsyNTA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Realfiyat, kdvTutari, kdvOran&#305;" type="Real" array="False" size=""/>
+            <output expression="&quot;Fiyat Giriniz&quot;" newline="True"/>
+            <input variable="fiyat"/>
+            <output expression="&quot;Kdv oran&#305;n&#305; giriniz&quot;" newline="True"/>
+            <assign variable="kdvOran&#305;" expression="&amp;kdvOran&#305;"/>
+            <assign variable="kdvTutari" expression="fiyat-(fiyat/(1+kdvOran&#305;/100))"/>
+            <output expression="&quot;Girilen tutar&#305;n kdv'si&quot; &amp;kdvTutari" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

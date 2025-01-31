@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="VizeFinal"/>
+        <attribute name="authors" value="yunus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-30 03:33:24 &#214;S"/>
+        <attribute name="created" value="eXVudXM7TVlUT1A7MjAyNS0wMS0zMDswMjozNzoxOCDDllM7MjQwNw=="/>
+        <attribute name="edited" value="eXVudXM7TVlUT1A7MjAyNS0wMS0zMDswMzozMzoyNCDDllM7MzsyNTEx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vize, final, ortalama" type="Integer" array="False" size=""/>
+            <input variable="vize"/>
+            <input variable="final"/>
+            <assign variable="ortalama" expression="vize*0.4+final*0.6"/>
+            <output expression="ortalama" newline="True"/>
+            <if expression="ortalama&gt;=50">
+                <then>
+                    <output expression="&quot;Tebrikler&quot; &amp;ortalama" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Maalesef&quot; &amp;ortalama" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
