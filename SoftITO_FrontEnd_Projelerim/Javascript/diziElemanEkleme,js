@@ -1,0 +1,29 @@
+//dizilere eleman eklemek için push metodu kullanılır
+
+let sehirler = ["Adana","Adiyaman","Aydin","Ankara"];
+
+//sehirler dizisine yeni eleman ekleme
+sehirler.push("Balıkesir");
+console.log(sehirler);
+
+// unshift, dizinin basına eleman eklemeye yarar
+
+sehirler.unshift("AAAAA");
+console.log(sehirler);
+
+//splice() metod hem eleman eklemek hemde silmek için kullanılır.
+
+sehirler.splice(0,1); // Birinci eleman hangi index ten baslayacagı, 2. eleman kaç adet sileceği belirtir.
+console.log(sehirler);
+sehirler.splice(4,0,"Bursa"); // 4. elemanın basına Bursa yı ekler.
+console.log(sehirler);
+
+// Diziden eleman silmek pop(), shift() ve splice() metotlarıyla yapılabilir.
+console.log("Dizi sonundan eleman silme");
+sehirler.pop();
+console.log(sehirler);
+
+// shift metot dizinin basından eleman silmek için kullanılır.
+console.log("Dizi başından eleman silme");
+sehirler.shift();
+console.log(sehirler);

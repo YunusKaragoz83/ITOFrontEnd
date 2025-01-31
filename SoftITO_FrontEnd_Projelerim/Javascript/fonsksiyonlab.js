@@ -5,6 +5,7 @@
  */
 
 function kareAl(x){
+    console.log(`${x} nin karesi:${x*x}`);
     return (x*x)
 }
 
