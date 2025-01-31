@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Fibonacci Serisi"/>
+        <attribute name="authors" value="yunus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-31 10:55:13 &#214;&#214;"/>
+        <attribute name="created" value="eXVudXM7TVlUT1A7MjAyNS0wMS0zMTsxMDo1NDozOCDDlsOWOzI1Mzk="/>
+        <attribute name="edited" value="eXVudXM7TVlUT1A7MjAyNS0wMS0zMTsxMDo1NToxMyDDlsOWOzE7MjY0MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body/>
+    </function>
+</flowgorithm>
