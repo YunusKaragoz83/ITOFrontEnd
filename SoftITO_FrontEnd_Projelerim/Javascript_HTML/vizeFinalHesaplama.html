@@ -10,7 +10,7 @@
             color: white;
             background-color: green;
             margin-left: 60px;
-            width: 10%;
+            width: 100px;
             border-color: antiquewhite;
         }
         label, input {
@@ -28,6 +28,19 @@
             document.getElementById("not").innerHTML = "Not ortalamanız: " + sonuc;
             console.log(sonuc);
             //console.log(vize1.value);
+            let mesaj = document.getElementById("sonuc");
+
+            if(sonuc >=50)
+            {
+                mesaj.style="color:green";
+                mesaj.innerHTML="Tebrikler Geçtiniz:"+sonuc;  
+            }
+            else
+            {
+                mesaj.style="color:red";
+                mesaj.innerHTML="Malasef Kaldiniz:"+sonuc;    
+      
+            }
         }
     </script>
 </head>
@@ -44,6 +57,7 @@
     <button type="button" id="btnHesapla" onclick="notHesapla()">Hesapla</button>
 
     <p id="not"></p>
+    <p id="sonuc"></p>
 
 </body>
 </html>
