@@ -9,7 +9,15 @@
 <body>
 
     <div class="container">
-        <div class="leftside">Leftside</div>
+        <div class="leftside">
+            <h3>Admin</h3>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+            </ul>
+        </div>
         <div class="rightside">
             <div class="topnav">
                 <a href="">Home</a>
@@ -18,32 +26,40 @@
                 <a href="">Services</a>
                 <button class="btn">Giriş Yap</button>
             </div>
-            <div class="dashboard">dashboard</div>
+            <div class="dashboard">
+                <h3>Dashboard</h3>
                 <div class="cards">
-                <div class="sales">Sales</div>
-                <div class="visitor">visitor</div>
-                <div class="chat">Chat</div>
+                    <div class="card-item">
+                        <h3>150</h3>
+                        <p>New Orders</p>
+                        <a href="">More İnfo</a>
+                    </div>
+                    <div class="card-item">
+                        <h3>53<sup>%</sup> </h3>
+                        <p>Bounce Rate</p>
+                        <a href="">More İnfo</a>
+                    </div>
+                    <div class="card-item">
+                        <h3>44</h3>
+                        <p>User Registrations</p>
+                        <a href="">More İnfo</a>
+                    </div>
+                    <div class="card-item">
+                        <h3>65</h3>
+                        <p>Uniqu Visitors</p>
+                        <a href="">More İnfo</a>
+                    </div>
+                </div>
             </div>
-            <div class="footer" id="footer">footer</div>
-            <time datetime="getSeconds">Saniye</time>
+            <div class="footer" id="footer">
+                <h5>Copyright © 2014-2021 AdminLTE.io. All rights reserved.</h5>
+                <h5>Version 3.2.0</h5>
+            </div>
             <div id="zaman"></div>
         </div>
     </div>
         
         <script>
-            function saniye(){
-                var saniye = new Date().getSeconds();
-                document.getElementsByTagName("time")[0].innerHTML = saniye;
-                document.getElementsByTagName("button")[0].innerHTML = saniye;
-                document.getElementsByClassName("footer")[0].innerHTML = saniye;
-            }
-
-            function salise(){
-                var salise = new Date().getMilliseconds();
-                document.getElementById("footer")[0].innerHTML = salise;
-            }
-            setInterval(saniye, 1000);
-            setInterval(salise, 1000);
 
             var intervalID;
             function guncelleZaman() {

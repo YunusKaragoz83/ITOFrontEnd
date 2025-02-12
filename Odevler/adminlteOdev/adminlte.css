@@ -1,0 +1,133 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    width: 100%;
+    height: 100vh;
+}
+
+.leftside {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #bbc6d7; 
+}
+
+.rightside {
+    display: grid;
+    grid-template-rows: 1fr 7fr 1fr;
+    background-color: #537dae;
+    padding: 15px;
+}
+.topnav {
+    background-color: #bbc6d7;
+    border: 1px solid #ccc;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+}
+
+.btn {
+    background-color: #814caf;
+    color: white;
+    padding: 7px 10px;
+    margin: 8px 20px;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    border-radius: 5px;
+    float: right;
+}
+
+.leftside li {
+    list-style-type: none;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #537dae;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.leftside li:hover {
+    background-color: #814caf;
+    color: white;
+}
+
+.leftside a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer {
+    background-color: #537dae;
+    text-align: bottom;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.dashboard {
+    margin-top: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.cards .card-item {
+    background-color: #bbc6d7;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cards .card-item h3 {
+    text-align: start;
+    margin: 10px 0;
+    font-size: 30px;
+    color: #537dae;
+}
+
+.cards .card-item p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.cards .card-item a {
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    display: block;
+    padding: 5px;
+    background-color: #814caf;
+    color: white;
+    border-radius: 5px;
+    margin: 5px 0 0px 0;
+    font-size: small;
+}
+
+sup {
+    color: royalblue;
+    font-size: medium;
+}
