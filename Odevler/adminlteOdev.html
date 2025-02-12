@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adminlte</title>
+    <link rel="stylesheet" href="adminlte.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="leftside">Leftside</div>
+        <div class="rightside">
+            <div class="topnav">
+                <a href="">Home</a>
+                <a href="">Contact</a>
+                <a href="">About</a>
+                <a href="">Services</a>
+                <button class="btn">Giriş Yap</button>
+            </div>
+            <div class="dashboard">dashboard</div>
+                <div class="cards">
+                <div class="sales">Sales</div>
+                <div class="visitor">visitor</div>
+                <div class="chat">Chat</div>
+            </div>
+            <div class="footer" id="footer">footer</div>
+            <time datetime="getSeconds">Saniye</time>
+            <div id="zaman"></div>
+        </div>
+    </div>
+        
+        <script>
+            function saniye(){
+                var saniye = new Date().getSeconds();
+                document.getElementsByTagName("time")[0].innerHTML = saniye;
+                document.getElementsByTagName("button")[0].innerHTML = saniye;
+                document.getElementsByClassName("footer")[0].innerHTML = saniye;
+            }
+
+            function salise(){
+                var salise = new Date().getMilliseconds();
+                document.getElementById("footer")[0].innerHTML = salise;
+            }
+            setInterval(saniye, 1000);
+            setInterval(salise, 1000);
+
+            var intervalID;
+            function guncelleZaman() {
+                const simdi = new Date();
+                let saniye = simdi.getSeconds();
+                let salise = simdi.getMilliseconds();
+                saniye = saniye < 10 ? "0" + saniye : saniye;
+                salise = salise < 10 ? "00" + salise : salise < 100 ? "0" + salise : salise;
+                document.getElementById("zaman").innerHTML = saniye + ":" + salise;
+            }
+            intervalID = setInterval(guncelleZaman, 100);
+            document.getElementById("zaman").addEventListener("mouseover", function() {
+                clearInterval(intervalID);
+                });
+            document.getElementById("zaman").addEventListener("mouseout", function() {
+                intervalID = setInterval(guncelleZaman, 100);
+                });
+            
+        </script>
+
+</body>
+</html>
