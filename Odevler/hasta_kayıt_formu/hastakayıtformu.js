@@ -20,3 +20,13 @@ document.getElementById('patientForm').addEventListener('submit', function (even
     alert('Hasta bilgileri kaydedildi.');
     document.getElementById('patientForm').reset();
 });
+
+if (tcno.length !== 11) {
+    alert('TC Kimlik numarası 11 haneli olmalıdır.');
+    return;
+}
+
+if (name.length < 2 || surname.length < 2) {
+    alert('Ad ve soyad en az 2 karakter olmalıdır.');
+    return;
+}

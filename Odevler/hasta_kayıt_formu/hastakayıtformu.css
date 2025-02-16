@@ -69,6 +69,11 @@ label {
     margin-bottom: 5px;
 }
 
+select {
+    padding: 5px;
+    width: 100px;
+}
+
 input[type="text"],
 input[type="tel"],
 textarea {
