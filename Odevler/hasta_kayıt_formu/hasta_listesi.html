@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasta Listesi</title>
+    <link rel="stylesheet" href="hastakayıtformu.css">
+    <style>
+            table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+
+        .content {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hasta Kayıt Sistemi</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="hastakayıtformu.html">Anasayfa</a></li>
+            <li><a href="#">Hakkımızda</a></li>
+            <li><a href="#">İletişim</a></li>
+        </ul>
+    </nav>
+    <div class="row">
+        <aside class="menu">
+            <ul>
+                <li><a href="hastakayıtformu.html">Hasta Kayıt</a></li>
+                <li><a href="hasta_listesi.html">Hasta Listesi</a></li>
+                <li><a href="#">Randevu Al</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h2>Hasta Listesi</h2>
+            <table id="patientTable">
+                <thead>
+                    <tr>
+                        <th>Ad</th>
+                        <th>Soyad</th>
+                        <th>TC No</th>
+                        <th>Telefon</th>
+                        <th>Adres</th>
+                        <th>Sil</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </main>
+    </div>
+    
+    <script src="hasta_listesi.js"></script>
+</body>
+</html>

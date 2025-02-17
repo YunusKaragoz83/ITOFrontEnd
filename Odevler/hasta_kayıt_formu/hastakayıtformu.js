@@ -25,7 +25,14 @@ document.getElementById('patientForm').addEventListener('submit', function (even
         return;
     }
 
-    localStorage.setItem('patientData', JSON.stringify(patientData));
+    // LocalStorage'dan mevcut verileri al veya boş bir dizi oluştur
+    let patientList = JSON.parse(localStorage.getItem('patientList')) || [];
+
+    // Yeni hastayı listeye ekle
+    patientList.push(patientData);
+
+    // Tüm listeyi LocalStorage'a kaydet
+    localStorage.setItem('patientList', JSON.stringify(patientList));
 
     alert('Hasta bilgileri kaydedildi.');
     document.getElementById('patientForm').reset();
