@@ -1,1 +1,0 @@
-// Ödevini yap ve burada göster.
