@@ -8,14 +8,17 @@ var ogrenciler = [
 ]
 
 // for döngüsü ile ogrenciler dizisindeki her bir öğrencinin bilgilerini yazdırın.
+console.log("-----------------For döngüsü ile yazdırıldı.-------------------");
 for (i in ogrenciler){
     console.log(ogrenciler[i].isim + " " + ogrenciler[i].soyIsim + " " + ogrenciler[i].telNo + " " + ogrenciler[i].vize1 + " " + ogrenciler[i].vize2 + " " + ogrenciler[i].final);
 }
 
 // while döngüsü ile ogrenciler dizisindeki her bir öğrencinin bilgilerini yazdırın.
+console.log("-----------------while döngüsü ile yazdırıldı.-------------------");
 index = 0;
 while (index < ogrenciler.length){
-    console.log(`${ogrenciler[index].isim} ${ogrenciler[index].soyIsim} ${ogrenciler[index].telNo}`);
+    console.log(`${ogrenciler[index].isim} ${ogrenciler[index].soyIsim} ${ogrenciler[index].telNo} ${ogrenciler[index].vize1} ${ogrenciler[index].vize2} ${ogrenciler[index].final}`);
     index++;
+    // yukarıda template literal kullanıldı.
 }
 
