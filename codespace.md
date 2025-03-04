@@ -1,0 +1,1 @@
+#### Bu dosya Github codepsace ile oluşturuldu.
